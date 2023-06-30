@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Calendar</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="main-header">
+                <div class="today-wrapper">
+                    <p class="today">Sunday, January 1</p>
+                    <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+            </header>
+            <div class="calendar-wrapper">
+                <div class="calendar-display">
+                    <header class="header">
+                        <div class="current-month-year">January 2023</div>
+                        <div class="navigator">
+                            <span class="icon prev"><i class="fa-solid fa-caret-up"></i></span>
+                            <span class="icon next"><i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                    </header>
+                    <div class="calendar-rendering">
+                        <div class="days">
+                            <div class="day">Mo</div>
+                            <div class="day">Tu</div>
+                            <div class="day">We</div>
+                            <div class="day">Th</div>
+                            <div class="day">Fr</div>
+                            <div class="day">Sa</div>
+                            <div class="day">Su</div>
+                        </div>
+                        <div class="dates"></div>
+                    </div>
+                </div>
+                <div class="month-picking">
+                    <header class="header">
+                        <div class="current-year">2023</div>
+                        <div class="navigator">
+                            <span class="icon prev"><i class="fa-solid fa-caret-up"></i></span>
+                            <span class="icon next"><i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                    </header>
+                    <div class="month-rendering">
+                        <div class="months"></div>
+                    </div>
+                </div>
+                <div class="year-picking">
+                    <header class="header">
+                        <div class="current-year-period"></div>
+                        <div class="navigator">
+                            <span class="icon prev"><i class="fa-solid fa-caret-up"></i></span>
+                            <span class="icon next"><i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                    </header>
+                    <div class="year-rendering">
+                        <div class="years"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="main-footer">
+                <div class="time-focus-wrapper">
+                    <div class="period-change">
+                        <span class="icon minus"><i class="fa-solid fa-minus"></i></span>
+                        <div class="period-time"><span class="period">30</span> mins</div>
+                        <span class="icon plus"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="btn btn--focus-trigger"><i class="fa-solid fa-play"></i> Focus</div>
+                </div>
+            </footer>
+        </div>
+        <p class="counter" style="color: #000; text-align: center">00:00</p>
+        <script src="script.js"></script>
+        <script src="time-out.js"></script>
+    </body>
+</html>
